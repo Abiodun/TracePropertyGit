@@ -14,8 +14,8 @@
 	<meta charset="utf-8">
 	<title>Trace Property</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta name="description" content="Charisma, a fully featured, responsive, HTML5, Bootstrap admin template.">
-	<meta name="author" content="Muhammad Usman">
+	<meta name="description" content="TracePropety wants to take away the pains of finding your property listings in Africa">
+	<meta name="author" content="Abiodun Thorpe">
 
 	<!-- The styles -->
 	<link id="bs-css" href="css/bootstrap-cerulean.css" rel="stylesheet">
@@ -70,7 +70,7 @@
 <div class="container-fluid">
 <div class="row-fluid">  
        <div class="span4 pull-left"> 
-       <a href="index.html"><img src="img/Trace PropertyLogoTrans.png" alt="Logo" width="100" height="80"></a> 
+       <a href="index.html"><img class="traceLogo" src="img/Trace PropertyLogoTrans.png" alt="Logo" width="100" height="80"></a> 
         </div><!--Span4-->
         
            <div class="span8">  
@@ -130,7 +130,7 @@
             
             
             <div id="content" class="span10">
-             <!--Piginations-->
+             <!--Piginations Starts-->
              <div>
 				<ul class="breadcrumb">
 					<li>
@@ -158,7 +158,7 @@
 						<form class="form-horizontal">
 							<fieldset>
                             <div class="control-group">
-								<label class="control-label" for="selectError3">Property Listing Type</label>
+								<label class="control-label" for="selectError3" data-rel="tooltip" data-original-title="What kind of listing do you want to upolad?">Property Listing Type</label>
 								<div class="controls">
 								  <select id="selectError3">
 									<option>Bungalow</option>
@@ -170,9 +170,10 @@
 								</div>
                                 
                                 <div class="control-group">
-								<label class="control-label" for="selectError3">Number of Rooms</label>
+								<label class="control-label" for="selectError3" data-rel="tooltip" data-original-title="How many Rooms does it have">Number of Rooms</label>
 								<div class="controls">
 								  <select id="selectError3">
+                                    <option>No Room</option>
 									<option>1 Room</option>
 									<option>2 Rooms</option>
 									<option>3 Rooms</option>
@@ -182,11 +183,11 @@
 								</div>
                                
                                <div class="control-group">
-                               <label class="control-label" for="selectError3">Property Description</label>
+                               <label class="control-label" for="selectError3" data-rel="tooltip" data-original-title="Describe that property">Property Description</label>
                                <textarea id="resx" rows="3"></textarea>
                                </div>
                                
-                               <label class="control-label" for="selectError3">For Sale or For Rent?</label>
+                               <label class="control-label" for="selectError3" data-rel="tooltip" data-original-title="Is it for Sale or Rent?">For Sale or For Rent?</label>
 								<div class="controls">
 								  <select id="selectError3">
 									<option>For Sale</option>
@@ -195,7 +196,7 @@
 								</div>
                                
                                <div class="control-group">
-								<label class="control-label">Select images:</label>
+								<label class="control-label" data-rel="tooltip" data-original-title="You can select up 5 images">Select images:</label>
 								<div class="controls">
                                  <input type="file" name="img" multiple />
 								  
@@ -203,7 +204,7 @@
                              
                               
                               <div class="control-group">
-								<label class="control-label" for="selectError1">Other Features</label>
+								<label class="control-label" for="selectError1" data-rel="tooltip" data-original-title="Other property features">Other Features</label>
 								<div class="controls">
 								  <select id="selectError1" multiple data-rel="chosen">
 									<option>Parking Space</option>
@@ -248,6 +249,8 @@
 
 				</div><!--/fluid-row-->
 				<!--End of content-->
+                
+                
                 </div><!--End of span10-->
 		<hr>
 

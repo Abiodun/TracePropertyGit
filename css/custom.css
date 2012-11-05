@@ -1,7 +1,11 @@
 /* CSS Document */
 
+.traceLogo{
+	margin-bottom: 20px;
+	}
+
 body{
-background-image:url(../img/pattern.png);
+background-image:url(../img/Background.png);
 background-repeat:repeat;	
 	}
 

@@ -1242,6 +1242,7 @@ legend + .control-group {
   width: 140px;
   padding-top: 5px;
   text-align: right;
+  font-weight: bold;
 }
 .form-horizontal .controls {
   *display: inline-block;
@@ -2760,6 +2761,8 @@ input[type="submit"].btn.btn-mini {
 }
 .nav-tabs {
   border-bottom: 1px solid #ddd;
+  background-color: white;
+  border-radius: 5px;
 }
 .nav-tabs > li {
   margin-bottom: -1px;

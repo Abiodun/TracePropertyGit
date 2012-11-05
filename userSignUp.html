@@ -98,21 +98,21 @@
 						</div>
 					</div>
 					<div class="box-content">
-           <form>
+           <form id="registerHere">
               
               <label class="bluePush"><i class="icon-user"></i> Full Name</label>
-              <input type="text" class="span12" placeholder="Type Your Full Name…">
+              <input type="text" class="span12" placeholder="Type Your Full Name…" id="user_name" name="user_name">
               
              
               
               <label class="bluePush"><i class="icon-envelope"></i> Email</label>
-              <input type="email" class="span12" placeholder="Type Your Email">
+              <input type="email" class="span12" placeholder="Type Your Email" id="user_email" name="user_email">
               
               <label class="bluePush"><i class="icon-user"></i> Password</label>
-              <input type="password" class="span12" placeholder="Type Your Password">
+              <input type="password" class="span12" placeholder="Type Your Password" id="pwd" name="pwd">
               
               <label class="bluePush"><i class="icon-user"></i> Re-Type Your Password</label>
-              <input type="password" class="span12" placeholder="Please retype Your Chosen Password">
+              <input type="password" class="span12" placeholder="Please retype Your Chosen Password" id="cpwd" name="cpwd">
               
               <label class="checkbox bluePush">
                 <input type="checkbox"> I'll like to Recieve News, Offers And Updates 
@@ -120,8 +120,8 @@
               <label class="checkbox bluePush">
                 <input type="checkbox"> I have read, understand and agree to <a href="#">terms?</a> 
               </label>
-              <button type="submit" class="btn btn-primary bluePush"><i class="icon-ok"></i> Submit</button>
-              <button type="submit" class="btn bluePush"><i class="icon-remove"></i> Cancel</button>
+              <button type="submit" class="btn btn-primary bluePush"><i class="icon-ok"></i> Sign Me Up</button>
+              <button type="submit" class="btn bluePush"><i class="icon-remove"></i> Nope, Cancel it</button>
               </form>
               
               
@@ -160,17 +160,123 @@
  
    
 
-    <!-- Le javascript
-    ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
     
-    <script src="js/jquery-1.8.2.min.js"></script>
+	
+   <!-- external javascript
+	================================================== -->
+	<!-- Placed at the end of the document so the pages load faster -->
+
+	<!-- jQuery -->
+	<script src="js/jquery-1.8.2.min.js"></script>
+	<!-- jQuery UI -->
+	<script src="js/jquery-ui-1.8.21.custom.min.js"></script>
+	<!-- transition / effect library -->
 	<script src="js/bootstrap.js"></script>
+	<script src="js/bootstrap-tour.js"></script>
+	<!-- library for cookie management -->
+	<script src="js/jquery.cookie.js"></script>
+	<!-- calander plugin -->
+	<script src='js/fullcalendar.min.js'></script>
+	<!-- data table plugin -->
+	<script src='js/jquery.dataTables.min.js'></script>
+
+	<!-- chart libraries start -->
+	<script src="js/excanvas.js"></script>
+	<script src="js/jquery.flot.min.js"></script>
+	<script src="js/jquery.flot.pie.min.js"></script>
+	<script src="js/jquery.flot.stack.js"></script>
+	<script src="js/jquery.flot.resize.min.js"></script>
+	<!-- chart libraries end -->
+
+	<script src="js/jquery.validate.js"></script>
+    
+	<!-- select or dropdown enhancer -->
+	<script src="js/jquery.chosen.min.js"></script>
+	<!-- checkbox, radio, and file input styler -->
+	<script src="js/jquery.uniform.min.js"></script>
+	<!-- plugin for gallery image view -->
+	<script src="js/jquery.colorbox.min.js"></script>
+	<!-- rich text editor library -->
+	<script src="js/jquery.cleditor.min.js"></script>
+	<!-- notification plugin -->
+	<script src="js/jquery.noty.js"></script>
+	<!-- file manager library -->
+	<script src="js/jquery.elfinder.min.js"></script>
+	<!-- star rating plugin -->
+	<script src="js/jquery.raty.min.js"></script>
+	<!-- for iOS style toggle switch -->
+	<script src="js/jquery.iphone.toggle.js"></script>
+	<!-- autogrowing textarea plugin -->
+	<script src="js/jquery.autogrow-textarea.js"></script>
+	<!-- multiple file upload plugin -->
+	<script src="js/jquery.uploadify-3.1.min.js"></script>
+	<!-- history.js for cross-browser state change on ajax -->
+	<script src="js/jquery.history.js"></script>
+	<!-- application script for Charisma demo -->
+	<script src="js/charisma.js"></script>
 	
-    <script>
-	$('.typeahead').typeahead({source:['Office','Self Contain','Duplex','Lawore','3 Bedroom','5 Bedroom']})
-	</script>    
 	
+    
+    
+    
+    
+    <script type="text/javascript">
+	  $(document).ready(function(){
+			$('#registerHere input').hover(function()
+			{
+			$(this).popover('show')
+		});
+			$("#registerHere").validate({
+				rules:{
+					user_name:"required",
+					user_email:{
+							required:true,
+							email: true
+						},
+					pwd:{
+						required:true,
+						minlength: 6
+					},
+					cpwd:{
+						required:true,
+						equalTo: "#pwd"
+					},
+					gender:"required"
+				},
+				messages:{
+					user_name:"Enter your first and last name",
+					user_email:{
+						required:"Enter your email address",
+						email:"Enter valid email address"
+					},
+					pwd:{
+						required:"Enter your password",
+						minlength:"Password must be minimum 6 characters"
+					},
+					cpwd:{
+						required:"Enter confirm password",
+						equalTo:"Am not sure your passwords match, please confirm Passwords"
+					},
+					gender:"Select Gender"
+				},
+				errorClass: "help-inline",
+				errorElement: "span",
+				highlight:function(element, errorClass, validClass) {
+					$(element).parents('.control-group').addClass('error');
+				},
+				unhighlight: function(element, errorClass, validClass) {
+					$(element).parents('.control-group').removeClass('error');
+					$(element).parents('.control-group').addClass('success');
+				}
+			});
+		});
+	  </script>
+
+
+    
+    
+    
+    
   </body>
 </html>
 
