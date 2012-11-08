@@ -68,62 +68,95 @@ margin-left: 20px;
 
 
 
-/*Fotsdvas*/
-/*#footer {
-background: #F3F3F3;
-background: -moz-linear-gradient(top,#F3F3F3 0,white 100%);
-background: -webkit-gradient(linear,left top,left bottom,color-stop(0,#F3F3F3),color-stop(100%,white));
-background: -webkit-linear-gradient(top,#F3F3F3 0,white 100%);
-background: -o-linear-gradient(top,#F3F3F3 0,white 100%);
-background: -ms-linear-gradient(top,#F3F3F3 0,white 100%);
-background: linear-gradient(top,#F3F3F3 0,white 100%);
-font-size: 11px;
-padding: 40px 0 50px;
+.buttPush{
+	display: inline;
+	margin: 20px 30px;
+	}
+	
+	
+	
+	
+<!--User Login Section-->	
+#sessions .section-module, #registrations .section-module, #passwords .section-module, #authentication .section-module,#net_promoter .section-module {
+margin-bottom: 20px;
+}
+
+.social_logins {
+width: 90%;
+margin: 0 auto;
+text-align: center;
 }
 
 
-.compact {
-border-left: 26px transparent solid;
-border-right: 26px transparent solid;
-max-width: 928px;
+.social_logins h3 {
+margin-top: 30px;
+margin-bottom: 20px;
+}
+
+.wrapper {
+padding: 0 5.034%;
 margin: 0 auto;
 }
 
-
-.g-section, .g-unit {
-zoom: 1;
-}
-
-#footer .g-tpl-nest .g-unit {
-width: 20.8%;
-}
-
-
-
-#footer .g-tpl-nest .g-unit {
-width: 20.8%;
-}
-
-
-
-.g-tpl-nest .g-unit, .g-unit .g-tpl-nest .g-unit, .g-unit .g-unit .g-tpl-nest .g-unit, .g-unit .g-unit .g-unit .g-tpl-nest .g-unit, .g-unit .g-unit .g-unit .g-unit .g-tpl-nest .g-unit, .g-unit .g-unit .g-unit .g-unit .g-unit .g-tpl-nest .g-unit {
+#sessions .login_box, #registrations .login_box, #passwords .login_box, #authentication .login_box, #net_promoter .login_box {
+width: 100%;
 float: left;
-width: auto;
-display: inline;
-margin: 0;
 }
 
-.g-section, .g-unit {
-zoom: 1;
+.social_logins {
+width: 90%;
+margin: 0 auto;
+text-align: center;
+}
+
+.social_logins .g-button {
+white-space: nowrap;
+width: 30%;
+display: inline-block;
+margin: 5px 1% 5px 1%;
+padding: 5px 0;
+min-width: 200px;
+background-color: pink;
+border-radius: 3px;
+}
+
+.social_login_text {
+margin: 20px auto;
+width: 65%;
+font-size: 0.875em;
+text-align: center;
+color: #333;
+}
+
+ .login_box .center {
+text-align: center;
+}
+
+.social_logins .login_button.twitter {
+background-position: 10px -93px;
+margin-top: 5px;
+}
+
+.social_logins .login_button.facebook {
+background-position: 10px -47px;
+margin-top: 5px;
+}
+
+.social_logins .login_button 
+{
+text-align: left;
+line-height: 1.7em;
+font-size: 14px;
+padding: 6px 0 12px 50px;
+background:url(../img/sprite-providers.png) no-repeat 10px 3px;
+margin-top: 5px;
 }
 
 
-
-#footer .g-tpl-nest .g-last {
-width: 16.6%;
+{
+border-top: 1px solid #F2F3F4;
+margin: 20px 0 0 0;
+padding: 20px 0;
+font-size: 0.875em;
 }
-​
 
-textarea#resx {
-	margin-left: 18px;
-	}*/
