@@ -57,8 +57,18 @@ color: #93BADA;
 
 
 
-.bluePush{
+/*.bluePush{
 margin-top: 10px;
+font-weight: bold;
+	}*/
+	
+.agent_test{
+	height: 85px;
+	
+	margin-right: 0px;
+	margin-left: 6px;
+	float: right;
+	
 	}
 	
 #resx {

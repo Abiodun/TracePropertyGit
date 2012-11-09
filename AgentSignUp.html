@@ -61,7 +61,7 @@
         
            <div class="span8">  
            <ul class="nav nav-tabs pull-right">
-                <li class="active"><a href="#">Home</a></li>
+                <li><a href="index.html">Home</a></li>
                 <li><a href="details.html">Search Details</a></li>  
                 <li><a href="dashboard1.html">Dashboard</a></li>   
                 <li><a href="newListing.html">NewListing</a></li>
@@ -88,7 +88,7 @@
         
          
 		<div class="row-fluid sortable ui-sortable">
-         <div class="box span12">
+         <div class="box span8">
            <div class="box-header well" data-original-title>
 						<h2><i class="icon-edit"></i> Agents Sign-Up</h2>
 						<div class="box-icon">
@@ -98,57 +98,138 @@
 						</div>
 					</div>
 					<div class="box-content">
-           <form id="registerHere">
+           <form class="form-horizontal" id="registerHere">
               
-              <label class="bluePush"><i class="icon-user"></i> Full Name</label>
-              <input type="text" class="span12" placeholder="Type Your Full Name" id="user_name" name="user_name">
-              
+           <div class="control-group">
+			<label class="control-label" for="#" data-rel="tooltip" data-original-title="Please Enter you full Name"><i class="icon-user"></i> Your Full Name</label>
+			 <div class="controls">
+				<input type="text" id="user_name" name="user_name" class="span9">
+								  
+			 </div><!--End of controls-->
+			 </div><!--End of Control Group--> 
              
+             <div class="control-group">
+			<label class="control-label" for="#" data-rel="tooltip" data-original-title="Please Enter your Email"><i class="icon-user"></i> Your Email</label>
+			 <div class="controls">
+				<input type="email" id="user_email" name="user_email" class="span9">
+								  
+			 </div><!--End of controls-->
+			 </div><!--End of Control Group--> 
+             
+             <div class="control-group">
+			<label class="control-label" for="#" data-rel="tooltip" data-original-title="Please Enter your Password"><i class="icon-user"></i> Choose Password</label>
+			 <div class="controls">
+				<input type="password" id="pwd" name="pwd" class="span9">
+								  
+			 </div><!--End of controls-->
+			 </div><!--End of Control Group-->
+             
+             <div class="control-group">
+			<label class="control-label" for="#" data-rel="tooltip" data-original-title="Please Enter your Chosen Password"><i class="icon-user"></i> Re-Type Password</label>
+			 <div class="controls">
+				<input type="password" id="cpwd" name="cpwd" class="span9">								  
+			 </div><!--End of controls-->
+			 </div><!--End of Control Group-->
+                          
+             <div class="control-group">
+			<label class="control-label" for="#" data-rel="tooltip" data-original-title="Please Enter your Telephone"><i class="icon-user"></i> Your Telephone</label>
+			 <div class="controls">
+				<input type="tel" id="telephone" name="telephone" class="span9">					  
+			 </div><!--End of controls-->
+			 </div><!--End of Control Group-->
+             
+             <div class="control-group">
+			<label class="control-label" for="#" data-rel="tooltip" data-original-title="Please Enter your Company"><i class="icon-user"></i> Your Company</label>
+			 <div class="controls">
+				<input type="text" id="comp_name" name="comp_name" class="span9">					  
+			 </div><!--End of controls-->
+			 </div><!--End of Control Group-->
+             
+             <div class="control-group">
+				<label class="control-label"  data-rel="tooltip" data-original-title="Please Choose a scan copy of Int Passport or Drivers License">Passport or Drivers License</label>
+				 <div class="controls">
+				   <input type="file" required>
+				</div>
+				</div>
               
-              <label class="bluePush"><i class="icon-envelope"></i> Email</label>
-              <input type="email" class="span12" placeholder="Please Type Your Email" id="user_email" name="user_email">       
+              <div class="control-group"> 
+              <label class="control-label">Your Address</label>
+              <div class="controls">
+              <textarea rows="4"  placeholder="Type Your Message Here"></textarea>
+              </div>
+              </div>
               
-              <label class="bluePush"><i class="icon-user"></i> Password</label>
-              <input type="password" class="span12" placeholder="Type Your Password" id="pwd" name="pwd">
               
-              <label class="bluePush"><i class="icon-user"></i> Re-Type Your Password</label>
-              <input type="password" class="span12" placeholder="ReType Your Chosen Password" id="cpwd" name="cpwd">
-			  
-              <label class="bluePush"><i class="icon-user"></i> Your Contact Telephone</label>
-              <input type="tel" class="span12" placeholder="Type Your Telephone" name="usrtel">
-              
-              <label class="bluePush"><i class="icon-home"></i> Your Company Name</label>
-              <input type="text" class="span12" placeholder="Type Your Company Name">
-              
-              <label>Your Address</label>
-              <textarea rows="4" class="span12" placeholder="Type Your Message Here"></textarea>
-              
-              <label class="checkbox bluePush">
-                <input type="checkbox"> I'll like to Recieve News And Updates 
-              </label>
-              <label class="checkbox bluePush">
-                <input type="checkbox" id="terms-and-conditions"> Do you Agree to our <a href="#">terms?</a> 
-              </label>
+              <div class="controls">
               <button type="submit" class="btn btn-primary bluePush"><i class="icon-ok"></i> Create My Account</button>
               <button type="submit" class="btn bluePush"><i class="icon-remove"></i> Cancel</button>
-              </form>
+              </div>
+           </form>
               
               
               
               
               
               
-              
-              
-              
-              
-           </div><!--End of box content-->
+           </div><!--End of box8 content-->
          
          </div><!--End of span box -->
+         
+         
+         
+         
+         
+         <div class="box span4">
+           <div class="box-header well" data-original-title>
+						<h2><i class="icon-edit"></i> Agents Testimonials</h2>
+						<div class="box-icon">
+							<a href="#" class="btn btn-setting btn-round"><i class="icon-cog"></i></a>
+							<a href="#" class="btn btn-minimize btn-round"><i class="icon-chevron-up"></i></a>
+							<a href="#" class="btn btn-close btn-round"><i class="icon-remove"></i></a>
+						</div>
+					</div>
+		<div class="box-content">
+           <blockquote class="pull-right">
+            <img class="agent_test" src="img/IMG00965-20110612-2238.jpg">
+			 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante venenatis.</p>
+			<small>Someone famous in <cite title="">Body of work</cite></small>
+		   </blockquote>
+           
+           <blockquote class="pull-right">
+           <img class="agent_test" src="img/IMG00965-20110612-2238.jpg">
+			 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante venenatis.</p>
+			<small>Someone famous in <cite title="">Body of work</cite></small>
+		   </blockquote>
+           
+           <blockquote class="pull-right">
+            <img class="agent_test" src="img/IMG00965-20110612-2238.jpg">
+			 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante venenatis.</p>
+			<small>Someone famous in <cite title="">Body of work</cite></small>
+		   </blockquote>
+           
+           <blockquote class="pull-right">
+            <img class="agent_test" src="img/IMG00965-20110612-2238.jpg">
+			 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante venenatis.</p>
+			<small>Someone famous in <cite title="">Body of work</cite></small>
+		   </blockquote>
+           
+           <blockquote class="pull-right">
+            <img class="agent_test" src="img/IMG00965-20110612-2238.jpg">
+			 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante venenatis.</p>
+			<small>Someone famous in <cite title="">Body of work</cite></small>
+		   </blockquote>
+           
+           </div><!--End of box4 content-->
+         
+         </div><!--End of span box -->
+         
         </div><!--rowFluid sortable--> 
         
         
         
+        
+       
+    
        
         
         
@@ -238,6 +319,8 @@
 			$("#registerHere").validate({
 				rules:{
 					user_name:"required",
+					comp_name:"required",
+					telephone:"required",
 					user_email:{
 							required:true,
 							email: true
@@ -254,6 +337,8 @@
 				},
 				messages:{
 					user_name:"Enter your first and last name",
+					comp_name:"We need your company name",
+					telephone:"We need your telephone",
 					user_email:{
 						required:"Enter your email address",
 						email:"Enter valid email address"
@@ -266,6 +351,8 @@
 						required:"Enter confirm password",
 						equalTo:"Am not sure your passwords match, please confirm Passwords"
 					},
+					
+					
 					gender:"Select Gender"
 				},
 				errorClass: "help-inline",
