@@ -47,6 +47,10 @@
 	<link href='css/jquery.iphone.toggle.css' rel='stylesheet'>
 	<link href='css/opa-icons.css' rel='stylesheet'>
 	<link href='css/uploadify.css' rel='stylesheet'>
+    <link href='css/black_calculator.css' rel='stylesheet'>
+    <link href='css/black_calculator_ie.css' rel='stylesheet'>
+    
+    
     
 
 	<!-- The HTML5 shim, for IE6-8 support of HTML5 elements -->
@@ -83,7 +87,7 @@
                   <a class="dropdown-toggle" data-toggle="dropdown" href="#">Agents <b class="caret"></b></a>
                   <ul class="dropdown-menu">
                     <li><a href="#">Agents LogIn</a></li>
-                    <li><a href="#">Agents SignUp</a></li>
+                    <li><a href="AgentSignUp.html">Agents SignUp</a></li>
                     <li><a href="#">Learn  More</a></li>
                     <li class="divider"></li>
                     <li><a href="#">Log Out</a></li>
@@ -145,7 +149,7 @@
             
             <!--Start of content-->
 			<div class="row-fluid sortable">
-				<div class="box span12">
+				<div class="box span8">
 					<div class="box-header well" data-original-title>
 						<h2><i class="icon-edit"></i> Add a New Listing Here</h2>
 						<div class="box-icon">
@@ -246,8 +250,24 @@
 						  </form>
 					
 					</div>
-				</div><!--/span-->
+				</div><!--End of span8-->
 			
+             <div class="box span4">
+					<div class="box-header well" data-original-title>
+						<h2><i class="icon-edit"></i> Calculator</h2>
+						<div class="box-icon">
+							<a href="#" class="btn btn-setting btn-round"><i class="icon-cog"></i></a>
+							<a href="#" class="btn btn-minimize btn-round"><i class="icon-chevron-up"></i></a>
+							<a href="#" class="btn btn-close btn-round"><i class="icon-remove"></i></a>
+						</div>
+					</div>
+					<div class="box-content">
+						
+					 <div class="calculator"></div>
+                     
+					</div>
+				</div><!--/span 4-->
+            
 			</div><!--/row-->
 
 				</div><!--/fluid-row-->
@@ -284,7 +304,10 @@
 	<script src='js/fullcalendar.min.js'></script>
 	<!-- data table plugin -->
 	<script src='js/jquery.dataTables.min.js'></script>
-
+	
+    <!-- Calculator -->
+    <script src='js/jquery.blackcalculator.beta.min.js'></script>
+    
 	<!-- chart libraries start -->
 	<script src="js/excanvas.js"></script>
 	<script src="js/jquery.flot.min.js"></script>
@@ -318,6 +341,12 @@
 	<!-- application script for Charisma demo -->
 	<script src="js/charisma.js"></script>
 	
-		
+	<script type="text/javascript">
+    $(document).ready(function(){
+        var langs = {value: 'Valor', clear: 'Clear', backspace: 'Voltar'};
+        $('.calculator').blackCalculator({type:'simple', allowKeyboard:true, language:langs});
+    });
+    </script>	
+    
 </body>
 </html>

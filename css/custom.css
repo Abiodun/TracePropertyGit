@@ -10,18 +10,30 @@ background-repeat:repeat;
 	}
 
 /*Search Bar*/
-.span9.hero-unit h3 {
+.span12.hero-unit h3 {
 text-align: center;
+font-size: 43px;
+line-height: 34px;
+letter-spacing: 0.5px;
 }
 
-.span9.hero-unit p {
+.span12.hero-unit p {
 text-align: center;
+font-size: 26px;
+line-height: 34px;
+letter-spacing: 0.5px;
+padding-top: 5px;
+margin-bottom: 11px;
 }
 
 #searchBar{
 	height: 50px;
 	}
-
+#mid {
+	padding-top:10px;
+	padding-left: 130px;
+	padding-bottom:20px;
+	}
 
 /*Bottom Links*/
 .popular-block {
@@ -170,3 +182,7 @@ padding: 20px 0;
 font-size: 0.875em;
 }
 
+/*div#move {
+	width: 100%;
+	margin: 0 auto;
+	}*/

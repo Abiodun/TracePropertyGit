@@ -595,6 +595,8 @@ pre code {
 }
 form {
   margin: 0 0 18px;
+  padding-left: 40px; /*I added this*/
+  padding-right: 40px;/*I added this*/
 }
 fieldset {
   padding: 0;

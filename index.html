@@ -70,7 +70,7 @@
                   <a class="dropdown-toggle" data-toggle="dropdown" href="#">Agents <b class="caret"></b></a>
                   <ul class="dropdown-menu">
                     <li><a href="login.html">Agents LogIn</a></li>
-                    <li><a href="#">Agents SignUp</a></li>
+                    <li><a href="AgentSignUp.html">Agents SignUp</a></li>
                     <li><a href="#">Learn  More</a></li>
                     <li class="divider"></li>
                     <li><a href="#">Log Out</a></li>
@@ -85,11 +85,11 @@
   
 		<div class="row-fluid">
          
-         <div class="span9 hero-unit">
+         <div class="span12 hero-unit">
          <h3>A Better Way to Find Listings</h3>
          <p>Property Listing Shouldn't Be That Hard to Find! Begin Your Search Below</p>
        
-         <div class="input-append">
+         <div id="mid" class="input-append">
           <input class="span9" id="searchBar" size="16" type="text" placeholder="eg: 3 Bedrooms in Festac Town Lagos" data-provide="typeahead"><button id="searchBar" class="btn" type="button">For Sale</button><button class="btn btn-primary" type="button" id="searchBar">For Rent</button>
         </div>
          
@@ -101,7 +101,7 @@
                   <th>Location</th>
                   <th>Property Type</th>
                   <th>Price</th>
-                  <th>Bedrooms</th>
+                  <th>Status</th>
                   <th>Agent</th>
                 </tr>
               </thead>
@@ -111,7 +111,9 @@
                   <td>Mark</td>
                   <td>Otto</td>
                   <td>@mdo</td>
-                  <td>@mdo</td>
+                  <td class="center">
+					<span class="label label-success">Active</span>
+				  </td>
                   <td>@mdo</td>
                 </tr>
                 <tr>
@@ -119,7 +121,9 @@
                   <td>Jacob</td>
                   <td>Thornton</td>
                   <td>@fat</td>
-                  <td>@mdo</td>
+                  <td class="center">
+					<span class="label label-warning">Pending</span>
+				  </td>
                   <td>@mdo</td>
                 </tr>
                 <tr>
@@ -127,7 +131,9 @@
                   <td>Larry</td>
                   <td>the Bird</td>
                   <td>@twitter</td>
-                  <td>@mdo</td>
+                  <td class="center">
+					<span class="label label-warning">Pending</span>
+				  </td>
                   <td>@mdo</td>
                 </tr>
                 <tr>
@@ -135,7 +141,9 @@
                   <td>Larry</td>
                   <td>the Bird</td>
                   <td>@twitter</td>
-                  <td>@mdo</td>
+                  <td class="center">
+					<span class="label label-success">Active</span>
+				  </td>
                   <td>@mdo</td>
                 </tr>
               </tbody>
@@ -146,14 +154,12 @@
          
          
          
-         <div class="input-append">
-		 <input id="appendedInputButtons" size="16" type="text"><button class="btn" type="button">Search</button><button class="btn" type="button">Options</button>
-		</div>
          
          
          
          
-         <div class="well span9">
+         <!--Start of 2nd-->
+         <!--<div class="well span9">
           <h3>A Better Way to Find Listings</h3>
          <p>Property Listing Shouldn't Be That Hard to Find! Begin Your Search Below</p>
          
@@ -162,54 +168,70 @@
           <button class="btn btn-large btn-primary" type="button">Large button</button>
           <button class="btn btn-large btn-primary" type="button">Large button</button>
           
-         </div>
+          <table class="table table-striped">
+							  <thead>
+								  <tr>
+									  <th>Username</th>
+									  <th>Date registered</th>
+									  <th>Role</th>
+									  <th>Status</th>                                          
+								  </tr>
+							  </thead>   
+							  <tbody>
+								<tr>
+									<td>Muhammad Usman</td>
+									<td class="center">2012/01/01</td>
+									<td class="center">Member</td>
+									<td class="center">
+										<span class="label label-success">Active</span>
+									</td>                                       
+								</tr>
+								<tr>
+									<td>White Horse</td>
+									<td class="center">2012/02/01</td>
+									<td class="center">Staff</td>
+									<td class="center">
+										<span class="label label-important">Banned</span>
+									</td>                                       
+								</tr>
+								<tr>
+									<td>Sheikh Heera</td>
+									<td class="center">2012/02/01</td>
+									<td class="center">Admin</td>
+									<td class="center">
+										<span class="label">Inactive</span>
+									</td>                                        
+								</tr>
+								<tr>
+									<td>Saruar</td>
+									<td class="center">2012/03/01</td>
+									<td class="center">Member</td>
+									<td class="center">
+										<span class="label label-warning">Pending</span>
+									</td>                                       
+								</tr>
+								<tr>
+									<td>Sana Amrin</td>
+									<td class="center">2012/01/21</td>
+									<td class="center">Staff</td>
+									<td class="center">
+										<span class="label label-success">Active</span>
+									</td>                                        
+								</tr>                                   
+							  </tbody>
+						 </table>
+          
+          
+         </div-->><!--End of well span 9-->
+         <!--End of 2nd-->
          
          
          
          
          
+         </div><!--Span12-->
          
-         </div><!--Span8-->
-         
-         <div class="span3 hero-unit">
-          <legend>Refine your Search Here!</legend>
-           <span class="help-block">Property Type</span>
-         	<select class="span12"> 
-              <option>1</option>
-              <option>2</option>
-              <option>3</option>
-              <option>4</option>
-              <option>5</option>
-            </select>
-            <span class="help-block">No of Rooms</span>
-         	<select class="span12">
-              <option>1</option>
-              <option>2</option>
-              <option>3</option>
-              <option>4</option>
-              <option>5</option>
-            </select>
-            <span class="help-block">Location</span>
-         	<select class="span12">
-              <option>1</option>
-              <option>2</option>
-              <option>3</option>
-              <option>4</option>
-              <option>5</option>
-            </select>
-            <span class="help-block">Price Range</span>
-         	<select class="span12">
-              <option>100,000-200,000</option>
-              <option>200,000-300,000</option>
-              <option>300,000-400,000</option>
-              <option>400,000-500,000</option>
-              <option>>500,000</option>
-            </select>
-            
-              <button type="submit" class="btn btn-primary bluePush">Search</button>
-              <button type="button" class="btn bluePush">Cancel</button>
-            
-         </div>
+       
         </div><!--rowFluid--> 
         
         
