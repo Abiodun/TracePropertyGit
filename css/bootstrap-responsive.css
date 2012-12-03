@@ -214,6 +214,7 @@
   }
   .row-fluid [class*="span"]:first-child {
     margin-left: 0;
+	margin-top: 0; /*I added this*/
   }
   .row-fluid .span12 {
     width: 100%;
