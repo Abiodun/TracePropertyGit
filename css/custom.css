@@ -1,5 +1,5 @@
-/* CSS Document */
 
+/*Index Page*/
 .traceLogo{
 	margin-bottom: 20px;
 	}
@@ -15,6 +15,7 @@ text-align: center;
 font-size: 43px;
 line-height: 34px;
 letter-spacing: 0.5px;
+color: #ED3497
 }
 
 .span12.hero-unit p {
@@ -24,6 +25,7 @@ line-height: 34px;
 letter-spacing: 0.5px;
 padding-top: 5px;
 margin-bottom: 11px;
+color: #ED3497
 }
 
 #searchBar{
@@ -34,6 +36,20 @@ margin-bottom: 11px;
 	padding-left: 130px;
 	padding-bottom:20px;
 	}
+
+
+#hkfs {
+text-align: center;
+}
+
+#hkfs ul li {
+list-style: none;
+}
+
+#hkfs ul li a{
+color: #ED3497
+}
+
 
 /*Bottom Links*/
 .popular-block {
@@ -135,7 +151,6 @@ display: inline-block;
 margin: 5px 1% 5px 1%;
 padding: 5px 0;
 min-width: 200px;
-background-color: pink;
 border-radius: 3px;
 }
 
@@ -189,9 +204,3 @@ font-size: 0.875em;
 	}
 
 
-
-
-/*div#move {
-	width: 100%;
-	margin: 0 auto;
-	}*/
