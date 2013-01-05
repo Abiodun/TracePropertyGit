@@ -50,6 +50,14 @@ list-style: none;
 color: #ED3497
 }
 
+#lssl{
+	width: 300px;
+	height: 100px;
+	background-color: green;
+	margin-right: 4px;
+	float: right;
+}
+
 
 /*Bottom Links*/
 .popular-block {
